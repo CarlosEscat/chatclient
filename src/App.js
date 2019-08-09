@@ -38,7 +38,7 @@ class App extends React.Component {
 
   render() {
     const messages = this.state.messages.map((messages, index) => (
-      <p key={index}> {messages} </p>
+      <p key={index}> {messages.text} </p>
     ));
 
     const form = (
