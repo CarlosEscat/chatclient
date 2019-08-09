@@ -31,7 +31,7 @@ class App extends React.Component {
     return (
       <main>
         <MessageForm user={this.props.user} />
-        <UserForm />
+        <UserForm user={this.props.user} />
         {messages}
       </main>
     );
