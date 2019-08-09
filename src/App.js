@@ -11,7 +11,9 @@ class App extends React.Component {
     message: ""
   };
 
-  source = new EventSource("http://localhost:5000/stream");
+  source = new EventSource(
+    "https://mysterious-mesa-84416.herokuapp.com/stream"
+  );
 
   componentDidMount() {
     this.source.onmessage = event => {
