@@ -9,7 +9,7 @@ export default class MessageForm extends React.Component {
     event.preventDefault();
 
     await request
-      .post("http://localhost:5000/message")
+      .post("https://mysterious-mesa-84416.herokuapp.com/message")
       .send({ message: this.state.message, user: this.props.user });
 
     this.setState({ message: "" });
