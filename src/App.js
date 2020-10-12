@@ -8,15 +8,16 @@ import { connect } from "react-redux";
 
 class App extends React.Component {
   state = {
-    message: ""
+    message: "",
   };
 
   source = new EventSource(
-    "https://mysterious-mesa-84416.herokuapp.com/stream"
+    //"https://mysterious-mesa-84416.herokuapp.com/stream"
+    "http://localhost:5000/stream"
   );
 
   componentDidMount() {
-    this.source.onmessage = event => {
+    this.source.onmessage = (event) => {
       const messages = JSON.parse(event.data);
       this.props.allMessages(messages);
     };
@@ -43,15 +44,12 @@ class App extends React.Component {
 function mapStateToProps(state) {
   return {
     messages: state.messages,
-    user: state.user
+    user: state.user,
   };
 }
 
 const mapDispatchToProps = {
-  allMessages
+  allMessages,
 };
 
-export default connect(
-  mapStateToProps,
-  mapDispatchToProps
-)(App);
+export default connect(mapStateToProps, mapDispatchToProps)(App);
