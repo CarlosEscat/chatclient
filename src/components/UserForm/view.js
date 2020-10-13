@@ -16,7 +16,7 @@ export default function View(props) {
           placeholder={user}
         />
         <button className="OkButton" type="submit">
-          Ok
+          ok
         </button>
       </form>
       <br />

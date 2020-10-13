@@ -40,9 +40,8 @@ class App extends React.Component {
         <main>
           <UserForm user={this.props.user} />
           <MessageForm user={this.props.user} />
-
-          {messages}
         </main>
+        {messages}
       </div>
     );
   }

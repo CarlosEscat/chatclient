@@ -4,13 +4,12 @@ label {
 }
 
 .MessageForm {
-  background-color: rgb(117, 121, 130);
-  color: aliceblue;
+  background-color: rgb(217, 220, 228);
+  color: rgb(55, 54, 81);
   border-radius: 10px;
   width: 400px;
   height: 80px;
   border-style: none;
-  opacity: 0.2;
 }
 
 .Send {

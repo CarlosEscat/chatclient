@@ -2,6 +2,7 @@
   text-align: center;
   align-items: center;
   justify-content: center;
+  font-family: "Lucida Console", Courier, monospace;
 }
 body {
   background-color: #282c34;
@@ -37,6 +38,15 @@ h1 {
   padding-right: 15px;
   border-radius: 10px;
   width: 80%;
+}
+
+main {
+  background-color: rgb(149, 168, 189);
+  margin-top: 50px;
+  padding-top: 20px;
+  border-radius: 10px;
+  width: 70%;
+  display: inline-block;
 }
 
 @keyframes App-logo-spin {
