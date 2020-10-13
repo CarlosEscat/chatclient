@@ -1,5 +1,10 @@
 .App {
   text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+body {
+  background-color: #282c34;
 }
 
 .App-logo {
@@ -19,8 +24,19 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+h1 {
+  color: #2c97b5;
+}
+
+.Message {
+  color: #e9f1f1;
+  background-color: #5373b1;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 10px;
+  width: 80%;
 }
 
 @keyframes App-logo-spin {

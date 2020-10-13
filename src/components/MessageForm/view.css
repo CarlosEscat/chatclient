@@ -1,0 +1,23 @@
+label {
+  color: rgb(47, 75, 75);
+  margin-right: 5px;
+}
+
+.MessageForm {
+  background-color: rgb(117, 121, 130);
+  color: aliceblue;
+  border-radius: 10px;
+  width: 400px;
+  height: 80px;
+  border-style: none;
+  opacity: 0.2;
+}
+
+.Send {
+  height: 80px;
+  border-radius: 10px;
+  border-style: none;
+  background-color: rgb(47, 114, 114);
+  color: white;
+  margin-left: 5px;
+}

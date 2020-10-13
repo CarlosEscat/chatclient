@@ -1,0 +1,19 @@
+label {
+  color: rgb(226, 232, 191);
+}
+
+.OkButton {
+  border-radius: 10px;
+  border-style: none;
+  background-color: rgb(62, 67, 135);
+  color: white;
+  margin-left: 5px;
+}
+
+.UserForm {
+  background-color: rgb(117, 121, 130);
+  color: aliceblue;
+  border-radius: 10px;
+  border-style: none;
+  opacity: 0.2;
+}

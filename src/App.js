@@ -5,6 +5,7 @@ import MessageForm from "./components/MessageForm";
 import UserForm from "./components/UserForm";
 import { allMessages } from "./actions";
 import { connect } from "react-redux";
+import "./App.css";
 
 class App extends React.Component {
   state = {
@@ -25,18 +26,24 @@ class App extends React.Component {
 
   render() {
     const messages = this.props.messages.map((messages, index) => (
-      <p key={index}>
-        {" "}
-        {messages.user}: {messages.text}{" "}
-      </p>
+      <div key={"messagediv" + index}>
+        <br />
+        <label className="Message" key={index}>
+          {messages.user}: {messages.text}
+        </label>
+      </div>
     ));
 
     return (
-      <main>
-        <MessageForm user={this.props.user} />
-        <UserForm user={this.props.user} />
-        {messages}
-      </main>
+      <div className="App">
+        <h1>Chat Translator</h1>
+        <main>
+          <UserForm user={this.props.user} />
+          <MessageForm user={this.props.user} />
+
+          {messages}
+        </main>
+      </div>
     );
   }
 }

@@ -1,15 +1,24 @@
 import React from "react";
+import "./view.css";
 
 export default function View(props) {
   const { onSubmit, value, onChange } = props;
 
   return (
     <div>
-      <h3>New message</h3>
       <form onSubmit={onSubmit}>
-        <input type="text" value={value} onChange={onChange} />
-        <button type="submit">Send</button>
+        <label>Message:</label>
+        <input
+          className="MessageForm"
+          type="text"
+          value={value}
+          onChange={onChange}
+        />
+        <button className="Send" type="submit">
+          Send
+        </button>
       </form>
+      <br />
     </div>
   );
 }
